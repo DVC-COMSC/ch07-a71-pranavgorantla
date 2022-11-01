@@ -1,10 +1,13 @@
+def Average(lst):
+    sum_of_list = 0
+    for i in range(len(lst)):
+        sum_of_list += lst[i]
+    average = sum_of_list/len(lst)
+    return average
 
-numbers = list(map(int, input().split()))
+list = [15, 9, 55, 41, 35, 20, 62, 49]
+average = Average(list)
 
-# ******************************
-# Make your Code
-# ******************************
-
-
-# Use this statement to print out the list element. # Replace the variable 'dist' with your variable
-# print (f'{dist:.2f}', end=' ')
+for i in range(list):
+  list[i] -= average
+  print(list)
